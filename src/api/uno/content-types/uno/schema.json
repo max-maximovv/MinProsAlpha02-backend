@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unos",
+  "info": {
+    "singularName": "uno",
+    "pluralName": "unos",
+    "displayName": "УНО",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NewsSlideText1": {
+      "type": "string"
+    },
+    "NewsSlideImg1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "NewsSlideText2": {
+      "type": "string"
+    },
+    "NewsSlideImg2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "NewsSlideText3": {
+      "type": "string"
+    },
+    "NewsSlideImg3": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AnonsSlideText1": {
+      "type": "string"
+    },
+    "AnonsSlideImg1": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AnonsSlideText2": {
+      "type": "string"
+    },
+    "AnonsSlideImg2": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AnonsSlideText3": {
+      "type": "string"
+    },
+    "AnonsSlideImg3": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "AnonsSlideTitle1": {
+      "type": "string"
+    },
+    "AnonsSlideTitle2": {
+      "type": "string"
+    },
+    "AnonsSlideTitle3": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_page_forms",
+  "info": {
+    "singularName": "main-page-form",
+    "pluralName": "main-page-forms",
+    "displayName": "Обращения граждан",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string"
+    },
+    "telephone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "theme": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

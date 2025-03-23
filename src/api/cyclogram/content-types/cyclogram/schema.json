@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cyclograms",
+  "info": {
+    "singularName": "cyclogram",
+    "pluralName": "cyclograms",
+    "displayName": "Циклограмма",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::record.record",
+      "mappedBy": "dayInfo"
+    }
+  }
+}

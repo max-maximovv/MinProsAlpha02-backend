@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "management_projects",
+  "info": {
+    "singularName": "management-project",
+    "pluralName": "management-projects",
+    "displayName": "Проекты министерства",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": false
+    },
+    "Img": {
+      "type": "string"
+    }
+  }
+}

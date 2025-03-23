@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glavnaya_straniczas",
+  "info": {
+    "singularName": "glavnaya-stranicza",
+    "pluralName": "glavnaya-straniczas",
+    "displayName": "Главная страница",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MainSliderText": {
+      "type": "text",
+      "required": false
+    },
+    "MainSliderTitle": {
+      "type": "string"
+    },
+    "MainSliderImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "SecondSliderTitle": {
+      "type": "string"
+    },
+    "SecondSliderText": {
+      "type": "text"
+    },
+    "SecondSliderImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "records",
+  "info": {
+    "singularName": "record",
+    "pluralName": "records",
+    "displayName": "Записи циклограммы",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "dayInfo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cyclogram.cyclogram",
+      "inversedBy": "records"
+    },
+    "place": {
+      "type": "string"
+    },
+    "time": {
+      "type": "string"
+    }
+  }
+}
