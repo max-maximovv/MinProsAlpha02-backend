@@ -1001,6 +1001,7 @@ export interface ApiManagementManagement extends Schema.CollectionType {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    slides: Attribute.Component<'slide.slide', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1067,6 +1068,7 @@ export interface ApiNewNew extends Schema.CollectionType {
   attributes: {
     Title: Attribute.String;
     Text: Attribute.RichText;
+    Date: Attribute.Date;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
