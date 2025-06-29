@@ -855,6 +855,38 @@ export interface ApiDocumentDocument extends Schema.CollectionType {
   };
 }
 
+export interface ApiEdinichnyeStraniczyEdinichnyeStraniczy
+  extends Schema.CollectionType {
+  collectionName: 'edinichnye_straniczies';
+  info: {
+    singularName: 'edinichnye-straniczy';
+    pluralName: 'edinichnye-straniczies';
+    displayName: '\u0415\u0434\u0438\u043D\u0438\u0447\u043D\u044B\u0435 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u044B';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    content: Attribute.RichText;
+    title: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::edinichnye-straniczy.edinichnye-straniczy',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::edinichnye-straniczy.edinichnye-straniczy',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiGlavnayaStraniczaGlavnayaStranicza
   extends Schema.CollectionType {
   collectionName: 'glavnaya_straniczas';
@@ -1079,6 +1111,30 @@ export interface ApiNewNew extends Schema.CollectionType {
   };
 }
 
+export interface ApiPlanPlan extends Schema.CollectionType {
+  collectionName: 'plans';
+  info: {
+    singularName: 'plan';
+    pluralName: 'plans';
+    displayName: 'plan';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    title: Attribute.String;
+    publishedDate: Attribute.Date;
+    file: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::plan.plan', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::plan.plan', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiRecordRecord extends Schema.CollectionType {
   collectionName: 'records';
   info: {
@@ -1192,12 +1248,14 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::cyclogram.cyclogram': ApiCyclogramCyclogram;
       'api::document.document': ApiDocumentDocument;
+      'api::edinichnye-straniczy.edinichnye-straniczy': ApiEdinichnyeStraniczyEdinichnyeStraniczy;
       'api::glavnaya-stranicza.glavnaya-stranicza': ApiGlavnayaStraniczaGlavnayaStranicza;
       'api::institution.institution': ApiInstitutionInstitution;
       'api::main-page-form.main-page-form': ApiMainPageFormMainPageForm;
       'api::management.management': ApiManagementManagement;
       'api::management-project.management-project': ApiManagementProjectManagementProject;
       'api::new.new': ApiNewNew;
+      'api::plan.plan': ApiPlanPlan;
       'api::record.record': ApiRecordRecord;
       'api::uno.uno': ApiUnoUno;
     }
